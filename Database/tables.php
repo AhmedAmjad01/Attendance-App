@@ -194,8 +194,8 @@ clearTable($dbo, "faculty_details");
 $c = "insert into faculty_details
 (id,user_name,password,name)
 values
-(1,'rcb','123','Ram Charan Baishya'),
-(2,'arindam','123','Arindam Karmakar'),
+(1,'Musadiq_Mansoor@giki.edu.pk','123','Musadiq Mansoor'),
+(2,'Abdullah_Zarshad','123','Abdullah Bin Zarshad'),
 (3,'pal','123','Pallabi'),
 (4,'anuj','123','Anuj Agarwal'),
 (5,'mriganka','123','Mriganka Sekhar'),
@@ -212,9 +212,10 @@ clearTable($dbo, "session_details");
 $c = "insert into session_details
 (id,year,term)
 values
-(1,2023,'SPRING SEMESTER'),
-(2,2023,'AUTUMN SEMESTER'),
-(3,2024,'SPRING SEMESTER')";
+(1,2024,'SUMMER SEMESTER'),
+(2,2024,'FALL SEMESTER'),
+(3,2025,'SPRING SEMESTER'),
+(4,2025,'SUMMER SEMESTER')";
 
 $s = $dbo->conn->prepare($c);
 try {
