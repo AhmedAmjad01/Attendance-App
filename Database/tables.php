@@ -164,7 +164,7 @@ values
 (8,'CE213','Hassan Shah','u2022???@giki.edu.pk'),
 
 
-(9,'ME212','?','u2021???@giki.edu.pk'),
+(9,'ME212','Ahmed Kazmi','u2021???@giki.edu.pk'),
 (10,'ME212','Areeb Majeed','u2022107@giki.edu.pk'),
 (11,'ME212','?','u2022???@giki.edu.pk'),
 (12,'ME212','?','u2022???@giki.edu.pk'),
