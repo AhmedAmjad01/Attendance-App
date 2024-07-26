@@ -153,18 +153,21 @@ clearTable($dbo, "student_details");
 $c = "insert into student_details
 (id,roll_no,name,email_id)
 values
-(1,'CSB21001','Alexy Johnson','abc@gmail.com'),
-(2,'CSB21002','Emily Smith','abc@gmail.com'),
-(3,'CSB21003','Ryan Thompson','abc@gmail.com'),
-(4,'CSB21004','Sophia Williams','abc@gmail.com'),
-(5,'CSB21005','Daniel Brown','abc@gmail.com'),
-(6,'CSB21006','Olivia Jones','abc@gmail.com'),
-(7,'CSB21007','Matthew Davis','abc@gmail.com'),
-(8,'CSB21008','Emma Miller','abc@gmail.com'),
-(9,'CSB21009','David Wilson','abc@gmail.com'),
-(10,'CSB21010','Sarah Taylor','abc@gmail.com'),
-(11,'CSB21011','Michael Martinez','abc@gmail.com'),
-(12,'CSB21012','Ava Anderson','abc@gmail.com'),
+(1,'CS232','Ahmed Amjad','u2022063@giki.edu.pk'),
+(2,'CS232','Haris Shah','u2022???@giki.edu.pk'),
+(3,'CS232','Aqib','2022???@giki.edu.pk'),
+(4,'CS232','Mursaleen','2022???@giki.edu.pk'),
+
+(5,'CE213','Senior?','u202????@giki.edu.pk'),
+(6,'CE213','Muhammed Bilal','u2022???@giki.edu.pk'),
+(7,'CE213','Haya Khan','u2022???@giki.edu.pk'),
+(8,'CE213','Hassan Shah','u2022???@giki.edu.pk'),
+
+
+(9,'ME212','?','u2021???@giki.edu.pk'),
+(10,'ME212','Areeb Majeed','u2022107@giki.edu.pk'),
+(11,'ME212','?','u2022???@giki.edu.pk'),
+(12,'ME212','?','u2022???@giki.edu.pk'),
 
 (13,'CSM21001','Liam Garcia','abc@gmail.com'),
 (14,'CSM21002','Isabella Rodriguez','abc@gmail.com'),
