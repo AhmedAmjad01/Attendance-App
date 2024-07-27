@@ -228,9 +228,10 @@ clearTable($dbo, "course_details");
 $c = "insert into course_details
 (id,title,code,credit)
 values
-  (1,'Database management system lab','CO321',2),
-  (2,'Pattern Recognition','CO215',3),
-  (3,'Data Mining & Data Warehousing','CS112',4),
+  (1,'Database Management System','CS232',3),
+  (2,'Computer Organization & Assembly Language','CE222',3),
+  (3,'Engineering Mechanics (Statics, Dynamics)','ME212',3),
+
   (4,'ARTIFICIAL INTELLIGENCE','CS670',4),
   (5,'THEORY OF COMPUTATION ','CO432',3),
   (6,'DEMYSTIFYING NETWORKING ','CS673',1)";
