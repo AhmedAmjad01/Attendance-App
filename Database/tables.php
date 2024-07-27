@@ -208,7 +208,7 @@ try {
   echo ("<br>duplicate entry");
 }
 
-clearTable($dbo, "session_details");
+//clearTable($dbo, "session_details");
 $c = "insert into session_details
 (id,year,term)
 values
