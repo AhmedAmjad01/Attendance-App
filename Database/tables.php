@@ -232,7 +232,7 @@ values
   (2,'Computer Organization & Assembly Language','CE222',3),
   (3,'Engineering Mechanics (Statics, Dynamics)','ME212',3),
 
-  (4,'ARTIFICIAL INTELLIGENCE','CS670',4),
+  (4,'Artificial Intelligence','CS351',3),
   (5,'THEORY OF COMPUTATION ','CO432',3),
   (6,'DEMYSTIFYING NETWORKING ','CS673',1)";
 $s = $dbo->conn->prepare($c);
