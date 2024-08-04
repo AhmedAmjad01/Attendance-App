@@ -5,7 +5,7 @@ session_start();
           $facid=$_SESSION["current_user"];
         }
     else{
-        header("location:"."/attendanceapp/login.php");
+        header("location:"."/Attendance-App/login.php");
         die();
     }
 ?>
