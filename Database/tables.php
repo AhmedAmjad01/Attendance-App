@@ -18,7 +18,7 @@ $c = "create table student_details
 (
     id int auto_increment primary key,
     roll_no varchar(20) unique,
-    name varchar(50),
+    name varchar(100),
     email_id varchar(100)
 )";
 $s = $dbo->conn->prepare($c);
@@ -48,7 +48,7 @@ try {
 $c = "create table faculty_details
 (
     id int auto_increment primary key,
-    user_name varchar(50) unique,
+    user_name varchar(100) unique,
     name varchar(100),
     password varchar(50)
 )";
@@ -177,7 +177,17 @@ values
 (18,'2022039','Abu Bakr Mazhar','u2022039@giki.edu.pk'),
 (19,'2022279','Manal Ahsan','u2022279@giki.edu.pk'),
 (20,'2022349','Muhammad Aqeeb','u2022349@giki.edu.pk'),
-(21,'2022905','Syed Ahmer Hussain','u2022905@giki.edu.pk')";
+(21,'2022905','Syed Ahmer Hussain','u2022905@giki.edu.pk'),
+
+(22,'2021016','Abdul Moiz Javed','u2021016@giki.edu.pk'),
+(23,'2021414','Muhammad Mashood Malik','u2021414@giki.edu.pk'),
+(24,'2022185','Haider Ali Khan Babar','u2022185@giki.edu.pk'),
+(25,'2022259','Lov Aashram','u2022259@giki.edu.pk'),
+(26,'2022267','Mahad Azhar Sheikh','u2022267@giki.edu.pk'),
+(27,'2022647','Muhammad Shumail Amir','u2022647@giki.edu.pk'),
+(28,'2023222','Hamza Saeed','u2023222@giki.edu.pk'),
+(29,'2023287','Mahad Ismail','u2023287@giki.edu.pk'),
+(30,'2023696','Syed Rayyan Hussain','u2023696@giki.edu.pk')";
 
 
 $s = $dbo->conn->prepare($c);
@@ -191,10 +201,11 @@ clearTable($dbo, "faculty_details");
 $c = "insert into faculty_details
 (id,user_name,password,name)
 values
-(1,'MusadiqMansoor','123','Musadiq Mansoor'),
-(2,'Beenish Arooj','123','Beenish Arooj'),
-(3,'Abdullah Bin Zarshad','123','Abdullah Bin Zarshad'),
-(4,'TA','123','TA')";
+(1,'Musadiq_Mansoor','123','Musadiq Mansoor'),
+(2,'Shahab_Uddin_Ansari','123','Shahab Uddin Ansari'),
+(3,'Abdullah_Bin_Zarshad','123','Abdullah Bin Zarshad'),
+(4,'TA','123','Teachers Assisstant'),
+(5,'Faheem_Ur_Rehman','123','Faheem Ur Rehman')";
 
 $s = $dbo->conn->prepare($c);
 try {
@@ -224,9 +235,10 @@ $c = "insert into course_details
 (id,title,code,credit)
 values
   (1,'Database management system lab','CS232',3),
-  (2,'Computer Organization & Assembly Language','CE222',3),
+  (2,'Signals & Systems','CE341',3),
   (3,'Computer Communication & Network','CE213',3),
-  (4,'THEORY OF Dynamics','ME212',3)";
+  (4,'THEORY OF Dynamics','ME212',3),
+  (5,'OOP Lab','CS112L',3)";
 $s = $dbo->conn->prepare($c);
 try {
   $s->execute();
@@ -244,9 +256,9 @@ $s = $dbo->conn->prepare($c);
 //iterate over all the 24 students
 //for each of them chose max 3 random courses, from 1 to 6
 
-for ($i = 1; $i <= 21; $i++) {
+for ($i = 1; $i <= 30; $i++) {
   for ($j = 0; $j < 2; $j++) {
-    $cid = rand(1, 4);
+    $cid = rand(1, 5);
     //insert the selected course into course_registration table for 
     //session 1 and student_id $i
     try {
@@ -285,9 +297,9 @@ $s = $dbo->conn->prepare($c);
 //iterate over all the 6 teachers
 //for each of them chose max 2 random courses, from 1 to 6
 
-for ($i = 1; $i <= 4; $i++) {
+for ($i = 1; $i <= 5; $i++) {
   for ($j = 0; $j < 1; $j++) {
-    $cid = rand(1, 4);
+    $cid = rand(1, 5);
     //insert the selected course into course_allotment table for 
     //session 1 and fac_id $i
     try 
